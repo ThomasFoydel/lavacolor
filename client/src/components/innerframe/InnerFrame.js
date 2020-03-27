@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSpring, animated, config } from 'react-spring';
 import ImageSelector from 'components/imageselector/ImageSelector';
+import PortfolioLink from 'components/portfoliolink/PortfolioLink';
 import './InnerFrame.scss';
 
 const InnerFrame = ({
@@ -42,6 +43,7 @@ const InnerFrame = ({
         LOREM
         <ImageSelector setCurrentPic={setCurrentPic} currentPic={currentPic} />
       </animated.div>
+      <PortfolioLink />
       <div className='innerframe-shade' />
     </>
   );

@@ -1,0 +1,27 @@
+.portfoliolink {
+  position: fixed;
+  color: #ffffff;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1rem;
+  font-size: 1.6rem;
+  transition: 0.2s all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  letter-spacing: 0.4rem;
+  min-width: 28rem;
+
+  height: 3rem;
+  &:hover {
+    color: #beffd5;
+    letter-spacing: 0.6rem;
+    min-width: 32rem;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .portfoliolink {
+    top: 0.5rem;
+  }
+}

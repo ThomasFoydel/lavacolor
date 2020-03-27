@@ -3,7 +3,7 @@ import Frame from 'components/frame/Frame';
 import bw from 'imgs/bw1.jpg';
 import particlesConfig from 'util/particlesConfig.js';
 import Particles from 'react-particles-js';
-import ImageSelector from 'components/imageselector/ImageSelector';
+// import PortfolioLink from 'components/portfoliolink/PortfolioLink';
 import InnerFrame from 'components/innerframe/InnerFrame';
 import './App.scss';
 
@@ -55,10 +55,10 @@ function App() {
         />
       </div>
 
-      {/* <ImageSelector setCurrentPic={setCurrentPic} currentPic={currentPic} /> */}
       {particlesOn && (
         <Particles className='particles' params={particlesConfig} />
       )}
+      {/* <PortfolioLink /> */}
     </div>
   );
 }
