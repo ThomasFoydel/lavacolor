@@ -23,8 +23,10 @@ const InnerFrame = ({
   return (
     <>
       <animated.div
-        onClick={() => {
-          setParticlesOn(!particlesOn);
+        onClick={e => {
+          if (e.target.id === 'innerframe') {
+            setParticlesOn(!particlesOn);
+          }
         }}
         style={
           springOn
@@ -35,6 +37,7 @@ const InnerFrame = ({
               }
         }
         className='innerFrame'
+        id='innerframe'
       >
         LOREM
         <ImageSelector setCurrentPic={setCurrentPic} currentPic={currentPic} />
