@@ -1,8 +1,17 @@
 import React from 'react';
 import { useSpring, animated, config } from 'react-spring';
+import ImageSelector from 'components/imageselector/ImageSelector';
 import './InnerFrame.scss';
 
-const InnerFrame = ({ xPos, yPos, springOn, setParticlesOn, particlesOn }) => {
+const InnerFrame = ({
+  xPos,
+  yPos,
+  springOn,
+  setParticlesOn,
+  particlesOn,
+  setCurrentPic,
+  currentPic
+}) => {
   const opacityVal = 0.4;
   const roundedOpacity = opacityVal.toFixed(1);
 
@@ -28,6 +37,7 @@ const InnerFrame = ({ xPos, yPos, springOn, setParticlesOn, particlesOn }) => {
         className='innerFrame'
       >
         LOREM
+        <ImageSelector setCurrentPic={setCurrentPic} currentPic={currentPic} />
       </animated.div>
       <div className='innerframe-shade' />
     </>

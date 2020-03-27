@@ -2,22 +2,34 @@
   position: fixed;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  top: 70%;
+  margin-top: 20vh;
   z-index: 3;
   display: flex;
 }
 
+// @media screen and (max-width: 700px) {
+//   .imageselector {
+//   }
+// }
 .imageselector-option {
   width: 1rem;
   height: 1rem;
   border-radius: 1000px;
-  background: rgb(29, 29, 29);
+  background: linear-gradient(
+    to bottom right,
+    rgb(99, 99, 99),
+    rgb(29, 29, 29)
+  );
   transition: all 0.3s ease;
   margin: 0 1rem;
   transform: scale(1);
 }
 
 .active {
-  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    to bottom right,
+    rgb(252, 252, 252),
+    rgb(165, 165, 165)
+  );
   transform: scale(1.8);
 }

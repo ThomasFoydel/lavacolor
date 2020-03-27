@@ -10,18 +10,6 @@ import './ImageSelector.scss';
 
 const ImageSelector = ({ setCurrentPic, currentPic }) => {
   return (
-    // <select
-    //   className='imageselector'
-    //   onChange={e => setCurrentPic(e.target.value)}
-    // >
-    //   <option value={bw1}>box</option>
-    //   <option value={bw2}>trees</option>
-    //   <option value={bw3}>feather</option>
-    //   <option value={bw4}>rocks</option>
-    //   <option value={bw5}>time</option>
-    //   <option value={bw6}>water</option>
-    //   <option value={bw7}>lines</option>
-    // </select>
     <div className='imageselector'>
       <div
         className={`imageselector-option ${currentPic === bw1 && 'active'}`}

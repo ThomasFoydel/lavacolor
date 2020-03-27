@@ -50,10 +50,12 @@ function App() {
           springOn={springOn}
           setParticlesOn={setParticlesOn}
           particlesOn={particlesOn}
+          setCurrentPic={setCurrentPic}
+          currentPic={currentPic}
         />
       </div>
 
-      <ImageSelector setCurrentPic={setCurrentPic} currentPic={currentPic} />
+      {/* <ImageSelector setCurrentPic={setCurrentPic} currentPic={currentPic} /> */}
       {particlesOn && (
         <Particles className='particles' params={particlesConfig} />
       )}
