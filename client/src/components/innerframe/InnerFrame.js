@@ -12,22 +12,25 @@ const InnerFrame = ({ xPos, yPos, springOn, setParticlesOn, particlesOn }) => {
     config: config.wobbly
   });
   return (
-    <animated.div
-      onClick={() => {
-        setParticlesOn(!particlesOn);
-      }}
-      style={
-        springOn
-          ? animationProps
-          : {
-              background: `linear-gradient(rgba(1, ${xPos}, ${yPos}, ${roundedOpacity}), rgba(${255 -
-                xPos}, ${xPos}, ${yPos}, ${roundedOpacity}))`
-            }
-      }
-      className='innerFrame'
-    >
-      Lorem ipsum
-    </animated.div>
+    <>
+      <animated.div
+        onClick={() => {
+          setParticlesOn(!particlesOn);
+        }}
+        style={
+          springOn
+            ? animationProps
+            : {
+                background: `linear-gradient(rgba(1, ${xPos}, ${yPos}, ${roundedOpacity}), rgba(${255 -
+                  xPos}, ${xPos}, ${yPos}, ${roundedOpacity}))`
+              }
+        }
+        className='innerFrame'
+      >
+        LOREM
+      </animated.div>
+      <div className='innerframe-shade' />
+    </>
   );
 };
 

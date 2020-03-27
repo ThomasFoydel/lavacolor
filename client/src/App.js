@@ -52,7 +52,7 @@ function App() {
           particlesOn={particlesOn}
         />
       </div>
-      <div className='innerframe-shade' />
+
       <ImageSelector setCurrentPic={setCurrentPic} currentPic={currentPic} />
       {particlesOn && (
         <Particles className='particles' params={particlesConfig} />

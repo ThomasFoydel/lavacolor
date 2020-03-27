@@ -1,9 +1,10 @@
 .innerFrame {
-  width: 50vw;
-  height: 50vh;
   position: absolute;
   margin-left: 50%;
   transform: translateX(-50%) translateY(-50%);
+  width: 50vw;
+  min-width: 25rem;
+  height: 50vh;
   top: 50%;
   color: white;
   font-size: 6rem;
@@ -12,21 +13,37 @@
   display: flex;
   text-align: center;
   padding: 4rem;
-  letter-spacing: 1rem;
-  padding-left: 5rem;
+  letter-spacing: 3rem;
+  padding-left: 7rem;
   z-index: 1;
   font-weight: bold;
   border: 2px solid rgba(255, 255, 255, 0.747);
-  //   backdrop-filter: blur(4px);
   cursor: default;
+}
+@media screen and (max-width: 700px) {
+  .innerFrame {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .innerFrame {
+    font-size: 2.8rem;
+  }
 }
 
 .innerframe-shade {
+  // position: absolute;
+  // margin-left: 50%;
+  // transform: translateX(-50%) translateY(-50%);
+  // width: 50vw;
+  // min-width: 25rem;
+
   position: absolute;
-  top: 50vh;
-  left: 50vw;
+  margin-left: 50%;
   transform: translateX(-50%) translateY(-50%);
   width: 50vw;
+  min-width: 25rem;
+  top: 50vh;
   height: 50vh;
   background: rgba(0, 0, 0, 0.26);
 }
