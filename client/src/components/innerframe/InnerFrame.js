@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useSpring, animated, config } from 'react-spring';
 import './InnerFrame.scss';
 
-const InnerFrame = ({ xPos, yPos, springOn }) => {
+const InnerFrame = ({ xPos, yPos, springOn, setParticlesOn, particlesOn }) => {
   //   const springOn = false;
   const opacityVal = 0.4;
   const roundedOpacity = opacityVal.toFixed(1);
@@ -14,6 +14,9 @@ const InnerFrame = ({ xPos, yPos, springOn }) => {
   });
   return (
     <animated.div
+      onClick={() => {
+        setParticlesOn(!particlesOn);
+      }}
       style={
         springOn
           ? animationProps

@@ -65,17 +65,15 @@ function App() {
           //       }
           // }
         />
-        <Frame xPos={xPos} yPos={yPos} />
+        <Frame
+          xPos={xPos}
+          yPos={yPos}
+          setParticlesOn={setParticlesOn}
+          particlesOn={particlesOn}
+        />
       </div>
       <div className='innerframe-shade' />
       <ImageSelector setCurrentPic={setCurrentPic} currentPic={currentPic} />
-      <button
-        onClick={() => {
-          setParticlesOn(!particlesOn);
-        }}
-      >
-        particles {particlesOn ? 'off' : 'on'}
-      </button>
       {particlesOn && (
         <Particles className='particles' params={particlesConfig} />
       )}

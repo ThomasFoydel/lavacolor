@@ -3,7 +3,7 @@ import { useSpring, animated, config } from 'react-spring';
 import InnerFrame from 'components/innerframe/InnerFrame';
 import './Frame.scss';
 
-const Frame = ({ xPos, yPos }) => {
+const Frame = ({ xPos, yPos, setParticlesOn, particlesOn }) => {
   const [springOn, setSpringOn] = useState(false);
   //   const [xPos, setXpos] = useState(100);
   //   const [yPos, setYpos] = useState(100);
@@ -44,7 +44,13 @@ const Frame = ({ xPos, yPos }) => {
         // onMouseMove={handleMouseMove}
         className='frame'
       ></animated.div>
-      <InnerFrame xPos={xPos} yPos={yPos} springOn={springOn} />
+      <InnerFrame
+        xPos={xPos}
+        yPos={yPos}
+        springOn={springOn}
+        setParticlesOn={setParticlesOn}
+        particlesOn={particlesOn}
+      />
     </>
   );
 };
