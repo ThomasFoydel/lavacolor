@@ -1,0 +1,32 @@
+.innerFrame {
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+  margin-left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  top: 50%;
+  color: white;
+  font-size: 6rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  text-align: center;
+  padding: 4rem;
+  letter-spacing: 1rem;
+  padding-left: 5rem;
+  z-index: 1;
+  font-weight: bold;
+  border: 2px solid rgba(255, 255, 255, 0.747);
+  //   backdrop-filter: blur(4px);
+  cursor: default;
+}
+
+.innerframe-shade {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translateX(-50%) translateY(-50%);
+  width: 50vw;
+  height: 50vh;
+  background: rgba(0, 0, 0, 0.26);
+}

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Inria+Sans:400,700&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  overscroll-behavior: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Inria Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  box-sizing: border-box;
+  background: rgba(245, 245, 245, 0);
+}
+
+button:focus,
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+a {
+  color: inherit;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+.backgroundpic {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover !important;
+  background-position: center center !important;
+  transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.particles {
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translateX(-50%) translateY(-50%);
+  width: 50vw;
+  height: 50vh;
+}
