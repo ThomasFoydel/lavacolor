@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { useSpring, animated, config } from 'react-spring';
 import './InnerFrame.scss';
 
 const InnerFrame = ({ xPos, yPos, springOn, setParticlesOn, particlesOn }) => {
-  //   const springOn = false;
   const opacityVal = 0.4;
   const roundedOpacity = opacityVal.toFixed(1);
 
